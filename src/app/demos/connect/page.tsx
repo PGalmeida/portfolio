@@ -7,7 +7,7 @@ import { connectDemos, demoBanner } from "@/content/demo-data";
 export const metadata: Metadata = {
   title: "Demos Connect",
   description:
-    "Demonstrações interativas sanitizadas dos módulos CRM, Seguros e Crédito do Connect.",
+    "Demonstrações interativas sanitizadas dos módulos Painel, CRM, Seguros, Crédito e Jurídico do Connect.",
 };
 
 export default function ConnectDemosHubPage() {

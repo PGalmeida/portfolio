@@ -13,9 +13,11 @@ const projectLinks = [
 const demoLinks = [
   { href: "/certificados", label: "Certificados" },
   { href: "/demos/connect", label: "Hub demos" },
+  { href: "/demos/connect/painel", label: "Painel" },
   { href: "/demos/connect/crm", label: "CRM" },
   { href: "/demos/connect/seguros", label: "Seguros" },
   { href: "/demos/connect/credito", label: "Crédito" },
+  { href: "/demos/connect/juridico", label: "Jurídico" },
 ];
 
 export function SiteFooter() {

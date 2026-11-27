@@ -69,6 +69,12 @@ export default async function ProjectCaseRoute({ params }: Props) {
                   Abrir demos interativas
                 </Link>
                 <Link
+                  href="/demos/connect/painel"
+                  className="inline-flex min-h-11 items-center rounded-md border border-[rgba(15,28,36,0.12)] px-4 py-2.5 font-display text-sm font-semibold text-[#0f1c24] hover:border-[#0b6b63]"
+                >
+                  Painel
+                </Link>
+                <Link
                   href="/demos/connect/crm"
                   className="inline-flex min-h-11 items-center rounded-md border border-[rgba(15,28,36,0.12)] px-4 py-2.5 font-display text-sm font-semibold text-[#0f1c24] hover:border-[#0b6b63]"
                 >
@@ -85,6 +91,12 @@ export default async function ProjectCaseRoute({ params }: Props) {
                   className="inline-flex min-h-11 items-center rounded-md border border-[rgba(15,28,36,0.12)] px-4 py-2.5 font-display text-sm font-semibold text-[#0f1c24] hover:border-[#0b6b63]"
                 >
                   Crédito
+                </Link>
+                <Link
+                  href="/demos/connect/juridico"
+                  className="inline-flex min-h-11 items-center rounded-md border border-[rgba(15,28,36,0.12)] px-4 py-2.5 font-display text-sm font-semibold text-[#0f1c24] hover:border-[#0b6b63]"
+                >
+                  Jurídico
                 </Link>
               </div>
             </div>

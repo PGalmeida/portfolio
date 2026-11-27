@@ -168,13 +168,118 @@ export const demoProposals: DemoProposal[] = [
   },
 ];
 
+export type DemoLegalCase = {
+  id: string;
+  client: string;
+  type: "Cobrança" | "Acordo" | "Judicial";
+  amount: string;
+  status: "Aberto" | "Em acordo" | "Encerrado";
+  agency: string;
+  openedAt: string;
+};
+
+export const demoLegalCases: DemoLegalCase[] = [
+  {
+    id: "JUR-3101",
+    client: "Cooperado Demo Alpha",
+    type: "Cobrança",
+    amount: "R$ 18.***,**",
+    status: "Aberto",
+    agency: "0001",
+    openedAt: "03/2025",
+  },
+  {
+    id: "JUR-3102",
+    client: "Cooperado Demo Beta",
+    type: "Acordo",
+    amount: "R$ 42.***,**",
+    status: "Em acordo",
+    agency: "0002",
+    openedAt: "01/2025",
+  },
+  {
+    id: "JUR-3103",
+    client: "Cooperado Demo Gama",
+    type: "Judicial",
+    amount: "R$ 9.***,**",
+    status: "Aberto",
+    agency: "0001",
+    openedAt: "05/2025",
+  },
+  {
+    id: "JUR-3104",
+    client: "Cooperado Demo Delta",
+    type: "Cobrança",
+    amount: "R$ 7.***,**",
+    status: "Encerrado",
+    agency: "0003",
+    openedAt: "11/2024",
+  },
+  {
+    id: "JUR-3105",
+    client: "Cooperado Demo Épsilon",
+    type: "Acordo",
+    amount: "R$ 25.***,**",
+    status: "Em acordo",
+    agency: "0002",
+    openedAt: "02/2025",
+  },
+];
+
+export const demoDashboardKpis = [
+  {
+    id: "metas",
+    label: "Metas",
+    value: "87%",
+    detail: "Percentual atingido",
+    footnote: "Meta: 90% | Previsão: 92%",
+  },
+  {
+    id: "carteira",
+    label: "Carteira",
+    value: "R$ 128,7 Mi",
+    detail: "Saldo total da carteira",
+    footnote: "Var. 30 dias: +2,4%",
+  },
+  {
+    id: "seguros",
+    label: "Seguros",
+    value: "R$ 24,3 Mi",
+    detail: "Prêmios emitidos (ano)",
+    footnote: "Vigência: 92% | Renovação: 68%",
+  },
+  {
+    id: "credito",
+    label: "Crédito",
+    value: "R$ 36,8 Mi",
+    detail: "Volume de crédito",
+    footnote: "Inadimplência: 1,7%",
+  },
+];
+
+export const demoPortfolioSegments = [
+  { name: "Corporate", share: "42%", amount: "R$ 54,0 Mi" },
+  { name: "Médias empresas", share: "28%", amount: "R$ 36,0 Mi" },
+  { name: "Pequenas empresas", share: "20%", amount: "R$ 25,7 Mi" },
+  { name: "Outros", share: "10%", amount: "R$ 13,0 Mi" },
+];
+
+export const demoIndicatorMonths = [
+  { month: "Dez", metas: 72, credito: 18 },
+  { month: "Jan", metas: 75, credito: 20 },
+  { month: "Fev", metas: 78, credito: 21 },
+  { month: "Mar", metas: 81, credito: 23 },
+  { month: "Abr", metas: 84, credito: 24 },
+  { month: "Mai", metas: 87, credito: 26 },
+];
+
 export const demoScreenshotSlots = [
   {
     id: "dash",
     title: "Painel operacional",
     caption: "Visão geral sanitizada da intranet (dados fictícios).",
     image: "/screenshots/connect/dash.png",
-    href: "/demos/connect",
+    href: "/demos/connect/painel",
   },
   {
     id: "crm",
@@ -197,9 +302,24 @@ export const demoScreenshotSlots = [
     image: "/screenshots/connect/credito.png",
     href: "/demos/connect/credito",
   },
+  {
+    id: "juridico",
+    title: "Jurídico / Recuperação",
+    caption: "Processos de cobrança e acordo com dados inventados.",
+    image: "/screenshots/connect/juridico.png",
+    href: "/demos/connect/juridico",
+  },
 ];
 
 export const connectDemos = [
+  {
+    href: "/demos/connect/painel",
+    title: "Painel operacional",
+    description:
+      "Dashboard com metas, carteira, seguros e crédito — só indicadores fictícios.",
+    image: "/screenshots/connect/dash.png",
+    tag: "Painel",
+  },
   {
     href: "/demos/connect/crm",
     title: "CRM / Carteira",
@@ -221,5 +341,13 @@ export const connectDemos = [
     description: "Pipeline kanban de propostas em estágios operacionais.",
     image: "/screenshots/connect/credito.png",
     tag: "Crédito",
+  },
+  {
+    href: "/demos/connect/juridico",
+    title: "Jurídico / Recuperação",
+    description:
+      "Processos de cobrança, acordo e judicial com valores mascarados.",
+    image: "/screenshots/connect/juridico.png",
+    tag: "Jurídico",
   },
 ];
