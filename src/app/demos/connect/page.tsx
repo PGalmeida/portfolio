@@ -44,6 +44,7 @@ export default function ConnectDemosHubPage() {
                 alt={featured.title}
                 fill
                 priority
+                unoptimized
                 className="object-cover transition duration-500 group-hover:scale-[1.02]"
                 sizes="(min-width: 768px) 60vw, 100vw"
               />
@@ -78,6 +79,7 @@ export default function ConnectDemosHubPage() {
                   src={demo.image}
                   alt={demo.title}
                   fill
+                  unoptimized
                   className="object-cover transition duration-500 group-hover:scale-[1.03]"
                   sizes="(min-width: 768px) 40vw, 100vw"
                 />

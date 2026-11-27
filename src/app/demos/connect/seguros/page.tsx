@@ -12,7 +12,7 @@ export default function SegurosDemoPage() {
     <DemoShell
       title="Seguros"
       description="Apólices demonstrativas e indicadores resumidos."
-      previewSrc="/screenshots/connect/seguros.svg"
+      previewSrc="/screenshots/connect/seguros.png"
     >
       <SegurosDemo />
     </DemoShell>

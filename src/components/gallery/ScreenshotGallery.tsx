@@ -32,6 +32,7 @@ export function ScreenshotGallery() {
                   src={slot.image}
                   alt={slot.title}
                   fill
+                  unoptimized
                   className="object-cover transition duration-500 group-hover:scale-[1.03]"
                   sizes="(min-width: 768px) 40vw, 100vw"
                 />
