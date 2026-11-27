@@ -12,7 +12,7 @@ export default function CrmDemoPage() {
     <DemoShell
       title="CRM / Carteira"
       description="Lista de contatos, filtros e detalhe com documentos mascarados."
-      previewSrc="/screenshots/connect/crm.jpg"
+      previewSrc="/screenshots/connect/crm.svg"
     >
       <CrmDemo />
     </DemoShell>

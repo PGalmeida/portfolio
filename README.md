@@ -28,8 +28,9 @@ Abra [http://localhost:3000](http://localhost:3000).
 
 1. Capture telas em **homologação** (nunca produção com PII real).
 2. Mascare CPF, contas, nomes e qualquer identificador sensível.
-3. Salve em `public/screenshots/connect/`.
-4. Referencie as imagens em `src/components/gallery/ScreenshotGallery.tsx`.
+3. Salve em `public/screenshots/connect/` (ex.: `crm.jpg`, `seguros.jpg`, `credito.jpg`, `dash.jpg`).
+4. Atualize os caminhos em `src/content/demo-data.ts` e nas pages em `src/app/demos/connect/*/page.tsx`.
+5. Faça commit dos arquivos — a Vercel só publica o que está no Git.
 
 ## Currículo PDF
 

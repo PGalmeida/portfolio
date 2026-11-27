@@ -12,7 +12,7 @@ export default function CreditoDemoPage() {
     <DemoShell
       title="Crédito / CCB"
       description="Kanban de propostas em estágios — apenas dados inventados."
-      previewSrc="/screenshots/connect/credito.jpg"
+      previewSrc="/screenshots/connect/credito.svg"
     >
       <CreditoDemo />
     </DemoShell>
