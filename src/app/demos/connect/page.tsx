@@ -45,7 +45,7 @@ export default function ConnectDemosHubPage() {
                 fill
                 priority
                 unoptimized
-                className="object-cover transition duration-500 group-hover:scale-[1.02]"
+                className="object-cover object-top transition duration-500 group-hover:scale-[1.02]"
                 sizes="(min-width: 768px) 60vw, 100vw"
               />
             </div>
@@ -80,7 +80,7 @@ export default function ConnectDemosHubPage() {
                   alt={demo.title}
                   fill
                   unoptimized
-                  className="object-cover transition duration-500 group-hover:scale-[1.03]"
+                  className="object-cover object-top transition duration-500 group-hover:scale-[1.03]"
                   sizes="(min-width: 768px) 40vw, 100vw"
                 />
                 <span className="absolute left-3 top-3 rounded-md bg-white/95 px-2.5 py-1 font-display text-[11px] font-semibold text-[#0b6b63]">
